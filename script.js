@@ -18,44 +18,47 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-// WhatsApp Integration
 function openWhatsApp() {
-  const phoneNumber = "5511999998888";
-  const message = encodeURIComponent(`🍝 Olá, Bella Massa Brasil!
+  const phoneNumber = "5516993342346";
+  const message = encodeURIComponent(
+    `*➤ Olá, Bella Massa Brasil!*
 
-Gostaria de conhecer mais sobre suas massas artesanais congeladas.
+> Gostaria de conhecer mais sobre suas massas artesanais congeladas.
 
-Tenho interesse em:
-• Lasanhas tradicionais
-• Massas frescas
-• Molhos artesanais
-• Pratos prontos
+*_Tenho interesse em:_*
+➜ *Lasanha à Bolonhesa*
+➜ *Lasanha à Bolonhesa com Creme Branco*
+➜ *Lasanha presunto e queijo*
+➜ *Lasanha de Frango com Presunto e Queijo*
+➜ *Lasanha de Frango*
+➜ *Escondidinho à Bolonhesa*
+➜ *Escondidinho de Frango*
+➜ *Rondelli de Presunto e Queijo*
+➜ *Rondelli à Bolonhesa*
 
-Poderiam me informar sobre:
-📋 Cardápio completo e preços
-🚚 Condições de entrega
-💳 Formas de pagamento
-⏰ Tempo de preparo
+*❯❯ Poderiam me informar sobre:*
+⇢ Cardápio completo e preços  
+⇢ Condições de entrega  
+⇢ Formas de pagamento  
 
-Aguardo retorno! 🇮🇹🇧🇷`);
-
+*Aguardo retorno!*`
+  );
   const whatsappURL = `https://wa.me/${phoneNumber}?text=${message}`;
   window.open(whatsappURL, "_blank");
 }
 
 function openWhatsAppProduct(productName, price) {
   const phoneNumber = "5516993342346";
-  const message = encodeURIComponent(`🍝 Olá, Bella Massa Brasil!
+  const message = encodeURIComponent(`🍝 Olá, Bella Massa Brasil! 
 
 Tenho interesse no produto:
-📦 ${productName}
-💰 ${price}
+• **${productName}**
+• **${price}**
 
-Gostaria de saber:
-• Disponibilidade
+Poderiam me informar sobre:
+• Cardápio completo e preços
 • Condições de entrega
 • Formas de pagamento
-• Tempo de preparo
 
 Aguardo retorno! 🇮🇹🇧🇷`);
 
